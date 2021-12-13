@@ -86,12 +86,13 @@
     <Compile Include="Simplifier.Designer.cs">
       <DependentUpon>Simplifier.cs</DependentUpon>
     </Compile>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="clean\lang.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="img\CreativeCloud-title.png" />
+    <Content Include="img\CCTitle.png" />
     <Content Include="img\Option.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
