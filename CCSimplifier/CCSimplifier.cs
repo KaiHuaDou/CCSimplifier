@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Resources;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -12,14 +13,18 @@ namespace CCSimplifier
             InitializeComponent();
         }
 
+        ResourceManager rsMgr = Properties.Resources.ResourceManager;
+
         private void GoSimplifier_MouseEnter(object sender, EventArgs e)
         {
-            GoSimplifier.Image = Image.FromFile(@"img\Option2.png");
+            object image = rsMgr.GetObject("Option2");
+            GoSimplifier.Image = (Image)image;
         }
 
         private void GoSimplifier_MouseLeave(object sender, EventArgs e)
         {
-            GoSimplifier.Image = Image.FromFile(@"img\Option.png");
+            object image = rsMgr.GetObject("Option");
+            GoSimplifier.Image = (Image)image;
         }
 
         private void button1_Click(object sender, EventArgs e)
