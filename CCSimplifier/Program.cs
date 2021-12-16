@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CCSimplifier
@@ -16,13 +17,13 @@ namespace CCSimplifier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            while (flag)
-            {
-                cs = new CCSimplifier();
-                s = new Simplifier();
-                if(flag == true) Application.Run(cs);
-                if (flag == true) Application.Run(s);
-            }
+            cs = new CCSimplifier();
+            Application.Run(cs);
+        }
+        public static void RunSimplifier()
+        {
+            s = new Simplifier();
+            Application.Run(s);
         }
     }
 }

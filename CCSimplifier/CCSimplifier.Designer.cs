@@ -54,9 +54,9 @@
             this.GoSimplifier.Size = new System.Drawing.Size(619, 95);
             this.GoSimplifier.TabIndex = 1;
             this.GoSimplifier.TabStop = false;
-            this.GoSimplifier.MouseLeave += new System.EventHandler(this.GoSimplifier_MouseLeave);
             this.GoSimplifier.Click += new System.EventHandler(this.GoSimplifier_Click);
             this.GoSimplifier.MouseEnter += new System.EventHandler(this.GoSimplifier_MouseEnter);
+            this.GoSimplifier.MouseLeave += new System.EventHandler(this.GoSimplifier_MouseLeave);
             // 
             // button1
             // 

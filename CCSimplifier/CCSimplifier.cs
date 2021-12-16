@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CCSimplifier
@@ -29,6 +30,8 @@ namespace CCSimplifier
 
         private void GoSimplifier_Click(object sender, EventArgs e)
         {
+            Thread t = new Thread(new ThreadStart(Program.RunSimplifier));
+            t.Start();
             this.Close();
         }
     }
