@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Simplifier));
             this.Cancel = new System.Windows.Forms.Button();
             this.Simplified = new System.Windows.Forms.Button();
-            this.GoBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.PathBox = new System.Windows.Forms.TextBox();
             this.Browse = new System.Windows.Forms.Button();
@@ -40,12 +39,12 @@
             this.Progress = new System.Windows.Forms.ProgressBar();
             this.ProgressText = new System.Windows.Forms.Label();
             this.ProgressPercent = new System.Windows.Forms.Label();
-            this.AppIcon = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Deleted = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.MoreInfo = new System.Windows.Forms.ListBox();
             this.ShowHideInfo = new System.Windows.Forms.Button();
+            this.AppIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.AppIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,16 +69,6 @@
             this.Simplified.Text = "精简";
             this.Simplified.UseVisualStyleBackColor = true;
             this.Simplified.Click += new System.EventHandler(this.Simplified_Click);
-            // 
-            // GoBack
-            // 
-            this.GoBack.Location = new System.Drawing.Point(347, 396);
-            this.GoBack.Name = "GoBack";
-            this.GoBack.Size = new System.Drawing.Size(97, 33);
-            this.GoBack.TabIndex = 6;
-            this.GoBack.Text = "上一步";
-            this.GoBack.UseVisualStyleBackColor = true;
-            this.GoBack.Click += new System.EventHandler(this.GoBack_Click);
             // 
             // label1
             // 
@@ -110,6 +99,7 @@
             // OpenExecute
             // 
             this.OpenExecute.Filter = "Adobe应用程序(*.exe)|*.exe";
+            this.OpenExecute.ShowReadOnly = true;
             this.OpenExecute.Title = "选择可执行文件";
             // 
             // AppName
@@ -145,24 +135,6 @@
             this.ProgressPercent.Size = new System.Drawing.Size(29, 20);
             this.ProgressPercent.TabIndex = 14;
             this.ProgressPercent.Text = "0%";
-            // 
-            // AppIcon
-            // 
-            this.AppIcon.Location = new System.Drawing.Point(12, 56);
-            this.AppIcon.Name = "AppIcon";
-            this.AppIcon.Size = new System.Drawing.Size(32, 32);
-            this.AppIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AppIcon.TabIndex = 10;
-            this.AppIcon.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(662, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // Deleted
             // 
@@ -204,6 +176,24 @@
             this.ShowHideInfo.UseVisualStyleBackColor = true;
             this.ShowHideInfo.Click += new System.EventHandler(this.ShowHideInfo_Click);
             // 
+            // AppIcon
+            // 
+            this.AppIcon.Location = new System.Drawing.Point(12, 56);
+            this.AppIcon.Name = "AppIcon";
+            this.AppIcon.Size = new System.Drawing.Size(32, 32);
+            this.AppIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AppIcon.TabIndex = 10;
+            this.AppIcon.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(662, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Simplifier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -222,7 +212,6 @@
             this.Controls.Add(this.Browse);
             this.Controls.Add(this.PathBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.GoBack);
             this.Controls.Add(this.Simplified);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.pictureBox1);
@@ -244,7 +233,6 @@
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Simplified;
-        private System.Windows.Forms.Button GoBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox PathBox;
         private System.Windows.Forms.Button Browse;

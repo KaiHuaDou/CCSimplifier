@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Resources;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -14,6 +15,8 @@ namespace CCSimplifier
         }
 
         ResourceManager rsMgr = Properties.Resources.ResourceManager;
+        [DllImport("shell32.dll")]
+        public extern static int ShellAbout(IntPtr hWnd, string szApp, string szOtherStuff, IntPtr hIcon);
 
         private void GoSimplifier_MouseEnter(object sender, EventArgs e)
         {
@@ -38,6 +41,11 @@ namespace CCSimplifier
             Thread t = new Thread(new ThreadStart(Program.RunSimplifier));
             t.Start();
             this.Close();
+        }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            ShellAbout(this.Handle, "CCSimplifier", "Version 1.0.0.0", this.Icon.Handle);
         }
     }
 }
