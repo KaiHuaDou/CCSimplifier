@@ -45,7 +45,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "取消";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.ExitClick);
             // 
             // GoSimplifier
             // 
@@ -56,8 +56,8 @@
             this.GoSimplifier.Size = new System.Drawing.Size(619, 95);
             this.GoSimplifier.TabIndex = 1;
             this.GoSimplifier.TabStop = false;
-            this.GoSimplifier.Click += new System.EventHandler(this.GoSimplifier_Click);
-            this.GoSimplifier.MouseEnter += new System.EventHandler(this.GoSimplifier_MouseEnter);
+            this.GoSimplifier.Click += new System.EventHandler(this.GoSimplifierClick);
+            this.GoSimplifier.MouseEnter += new System.EventHandler(this.GoSimplifierMouseEnter);
             this.GoSimplifier.MouseLeave += new System.EventHandler(this.GoSimplifier_MouseLeave);
             // 
             // pictureBox1
@@ -77,7 +77,7 @@
             this.AboutButton.TabIndex = 3;
             this.AboutButton.Text = "关于";
             this.AboutButton.UseVisualStyleBackColor = true;
-            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
+            this.AboutButton.Click += new System.EventHandler(this.AboutButtonClick);
             // 
             // CCSimplifier
             // 

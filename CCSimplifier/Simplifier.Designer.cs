@@ -58,7 +58,7 @@
             this.Cancel.TabIndex = 4;
             this.Cancel.Text = "完成";
             this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            this.Cancel.Click += new System.EventHandler(this.CancelClick);
             // 
             // Simplified
             // 
@@ -94,7 +94,7 @@
             this.Browse.TabIndex = 9;
             this.Browse.Text = "...";
             this.Browse.UseVisualStyleBackColor = true;
-            this.Browse.Click += new System.EventHandler(this.Browse_Click);
+            this.Browse.Click += new System.EventHandler(this.BrowseClick);
             // 
             // OpenExecute
             // 
@@ -174,7 +174,7 @@
             this.ShowHideInfo.TabIndex = 18;
             this.ShowHideInfo.Text = "显示/隐藏 ";
             this.ShowHideInfo.UseVisualStyleBackColor = true;
-            this.ShowHideInfo.Click += new System.EventHandler(this.ShowHideInfo_Click);
+            this.ShowHideInfo.Click += new System.EventHandler(this.ShowHideInfoClick);
             // 
             // AppIcon
             // 
