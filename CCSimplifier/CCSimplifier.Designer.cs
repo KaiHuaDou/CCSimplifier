@@ -58,7 +58,7 @@
             this.GoSimplifier.TabStop = false;
             this.GoSimplifier.Click += new System.EventHandler(this.GoSimplifierClick);
             this.GoSimplifier.MouseEnter += new System.EventHandler(this.GoSimplifierMouseEnter);
-            this.GoSimplifier.MouseLeave += new System.EventHandler(this.GoSimplifier_MouseLeave);
+            this.GoSimplifier.MouseLeave += new System.EventHandler(this.GoSimplifierMouseLeave);
             // 
             // pictureBox1
             // 
